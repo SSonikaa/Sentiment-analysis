@@ -20,11 +20,11 @@ def index():
 # Route for sentiment analysis
 @app.route('/analyze', methods=['post'])
 def analyse_sentiment():
-    API_KEY = 'AIzaSyATlroX1mnXdNMy718zVKAg_GA480Jd6JA'  # Put in your API Key
+    API_KEY = 'Your key'  
 
-    youtube = build('youtube', 'v3', developerKey=API_KEY)  # initializing Youtube API
+    youtube = build('youtube', 'v3', developerKey=API_KEY) 
 
-    # Taking input from the user and slicing for video id
+
    
     video_id= request.form['Video_id'][-11:]
     
@@ -70,7 +70,7 @@ def analyse_sentiment():
 
     relevant_comments = []
 
-    # Inside loop that processes comments
+  
     for comment_text in comments:
         comment_text = comment_text.lower().strip()
 
@@ -88,7 +88,7 @@ def analyse_sentiment():
     f.close()
 
     def sentiment_scores(comment, polarity):
-        # Creating a SentimentIntensityAnalyzer object.
+        
         sentiment_object = SentimentIntensityAnalyzer()
 
         sentiment_dict = sentiment_object.polarity_scores(comment)
