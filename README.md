@@ -1,5 +1,5 @@
 This is a data science based project which analyses the sentiments of Youtube comments. VADER library is used to analyse the sentiments. <br>
-View the project here : https://www.linkedin.com/posts/ssonikaa_datascience-python-flask-activity-7197236724547166208-SAlz?utm_source=share&utm_medium=member_desktop
+View the project here : https://www.linkedin.com/posts/ssonikaa_datascience-python-flask-activity-7197236724547166208-SAlz?utm_source=share&utm_medium=member_desktop <br>
 Steps to Replicate :<br>
 1.  Create your api key for youtube from https://developers.google.com<br>
 2.  Download conda<br>
